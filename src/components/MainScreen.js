@@ -4,6 +4,7 @@ import { createStackNavigator } from 'react-navigation';
 
 class MainScreen extends React.Component {
   render() {
+    console.log(this.props.navigation.dispatch); // Should be custom string passed from Navigator.
     return (
       <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
         <Text>Main Screen</Text>
